@@ -1,10 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Movie Ticket</title>
 </head>
 <body>
-$END$
+<h1>Buy Movie Ticket</h1>
+
+<label for="film">Movie:</label>
+<select id="film">
+    <option value="">Select a movie</option>
+    <option value="Castle in the Sky">Castle in the Sky</option>
+    <option value="Rottatouille">Rottatouille</option>
+    <option value="The Lion King">The Lion King</option>
+</select>
+
+<br>
+
+<label for="quantity">Number of Tickets:</label>
+<input id="quantity" type="number">
+
+<br>
+
+<label for="firstName">First Name:</label>
+<input id="firstName" type="text">
+
+<br>
+
+<label for="lastName">Last Name:</label>
+<input id="lastName" type="text">
+
+<br>
+
+<label for="telephone">Telephone:</label>
+<input id="telephone" type="tel">
+
+<br>
+
+<label for="email">Email:</label>
+<input id="email" type="email">
+
+<br>
+
+<button onclick="buyTicket()">Buy Ticket</button>
+<button onclick="removeAllTickets()">Remove All Tickets</button>
+
+<h2>All Tickets</h2>
+<ul id="ticketList"></ul>
+
+<script src="array.js"></script>
 </body>
 </html>
